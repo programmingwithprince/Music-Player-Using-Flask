@@ -1,1 +1,105 @@
 
+  body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  box-sizing: border-box;
+  transition: 0.1s all;
+}
+*{
+  margin: auto;
+}
+.header{
+  text-align: center;
+  font-size: 35px;
+  display: block;
+  margin: 2vh;
+}
+.body img{
+  height: 100%;
+  display: block;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 5vh;
+}
+.menu {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.Name{
+  font-size: 30px;
+  display: inline-block;
+  text-overflow: hidden;
+  word-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden ;
+  width: 90%;
+  height: 50px;
+  margin: 2vh;
+}
+header{
+  margin: 15px;
+}
+#progress{
+  width: 90vw;
+  height: 15px;
+  display: block;
+  margin: auto;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+#current{
+  float: left;
+  margin: 0px;
+  margin-left: 5px;
+  margin-bottom: 0.2vh;
+}
+#total{
+  float: right;
+  margin: 0px;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+.controls{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 70px;
+}
+.footer{
+  height: 40px;
+  display:flex ;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin-top: 5vh;
+  margin-bottom: 0px;
+  
+}
+#volume{
+  width: 80%;
+  display: inline-block;
+}
+.footer *{
+  display: inline-block;
+  margin: auto;
+  font-size: 22px;
+}
+.rep{
+  text-align: left;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-bottom: 1vh;
+  
+}
+.repeat{
+  font-size: 30px;
+  float: right;
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 16px;
+}
