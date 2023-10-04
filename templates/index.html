@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="apple-touch-icon" href="{{url_for('static',filename='Img/Music.jpg')}}" />
+<link rel="shortcut icon" href="{{url_for('static',filename='Img/Music.jpg')}}" type="image/x-icon" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>MusicPlayer</title>
+</head>
+<body onload="">
+<div class="main">
+<header class="header">
+<strong style="" onclick="random_bg_color ();random_color();openFullscreen();">Playing <span id="cur_no">X</span> Of <span id="totalno">Y</span></strong>
+<i class="fa fa-repeat repeat" onclick="load ();"></i>
+</header>
+<div class="body">
+<Img src="{{url_for('static',filename='Img/Music.jpg')}}" style="height:250px;width:250px;color:blue" />
+<div class="menu">
+<p class="Name" id="Name">
+Music Nameis a bit of a new one, but
+</p>
+<div class="rep">
+<i class="fa fa-repeat rep" id="repeat" onclick="repeat (this)"></i>
+</div>
+<p id="current">
+00:00
+</p>
+<p id="total">
+99:99
+</p>
+<input type="range" name="progress" id="progress" value="0" min="0" max="100" oninput="set (this)" />
+</div>
+<div class="controls" onload="" onclick="random_color()">
+<i class="fa fa-step-backward" onclick="backward ()"></i>
+<i onclick="mpb (this)" class="fa fa-play-circle " id="thiss"></i><i class="fa fa-step-forward " onclick="forward ()"></i>
+</div>
+<div class="footer">
+<i class="fa fa-volume-down "></i>
+<input type="range" name="volume" id="volume" value="60" oninput="setv(this)" />
+<i class="fa fa-volume-up"></i>
+</div>
+</div>
+</div>
+<script src="{{url_for('static',filename='js/index.js')}}"></script>
+</body>
+  </html>
