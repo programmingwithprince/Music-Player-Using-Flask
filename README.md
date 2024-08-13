@@ -10,6 +10,7 @@ Welcome to the **Music Player Using Flask** project! This repository contains a 
 ## ⚠️ Warning
 
 This project is not fully made and optimized. Use it at your own risk.
+Also it is mainly made for mobile devices.
 
 ## 📦 Installation
 
