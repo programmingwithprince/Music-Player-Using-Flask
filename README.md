@@ -33,7 +33,7 @@ Also it is mainly made for mobile devices.
 
 4. **Run the application**:
     ```bash
-    flask run
+    python main.py
     ```
 
 ## 📝 License
